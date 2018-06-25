@@ -1,0 +1,101 @@
+{% extends 'forwarder/base.html' %}
+{% block head %}
+<style media="screen">
+  body{
+    background: white;
+  }
+
+</style>
+{% endblock %}
+{% block body %}
+
+
+
+  <div class="row  ">
+
+
+    <div class="col s12 m3 l2 indigo lighten-2">
+
+        <div class=" section ">
+          <h5 >FILTER</h5>
+          <div class="divider"></div>
+        </div>
+
+        <div class="row ">
+          <div class="input-field col s12 white  ">
+            <select >
+              <option value="" disabled selected>Filter by</option>
+              <option value="1">Year</option>
+              <option value="2">Semester</option>
+              <option value="3">Date</option>
+            </select>
+
+          </div>
+
+
+
+      </div>
+
+
+
+
+      </div>
+
+
+
+        <div class="col s12 m9 l10 indigo lighten-3">
+
+          <div class=" section ">
+                <h5>REQUESTS</h5>
+                <div class="divider"></div>
+
+            </div>
+            <ul class="collapsible " data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header ">First</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
+                    <a class="waves-effect waves-light btn " href="{% url 'forwarder:detail' %}">Details</a>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header ">Second</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header ">Third</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header ">Fourth</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header ">Fifth</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header ">Sixth</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+            </ul>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+{% endblock %}
